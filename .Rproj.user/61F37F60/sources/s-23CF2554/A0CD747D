@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1559875487190.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2130178239",
+    "id" : "A0CD747D",
+    "lastKnownWriteTime" : 1560286491,
+    "last_content_update" : 1560286491534,
+    "path" : "~/Desktop/Independent Research/Data_Analysis_in_R/MS_AccuracyAnalysis.R",
+    "project_path" : "MS_AccuracyAnalysis.R",
+    "properties" : {
+        "cursorPosition" : "94,0",
+        "scrollLine" : "80",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

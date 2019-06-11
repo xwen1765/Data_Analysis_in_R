@@ -1,0 +1,25 @@
+
+Call:
+lm(formula = ReactionTime ~ 1 + CueDirection + CueValidity + 
+    CueDirection:CueValidity, data = d)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-357.08 -104.54  -14.18   78.04  773.51 
+
+Coefficients:
+                                                     Estimate Std. Error  t value Pr(>|t|)    
+(Intercept)                                          2037.876      1.630 1250.162  < 2e-16 ***
+CueDirectionTR vs. BL                                   5.693      1.630    3.492 0.000481 ***
+CueValidityValid vs. neutral                          -64.907      2.085  -31.124  < 2e-16 ***
+CueValidityInvalid vs. neutral                         72.838      2.550   28.569  < 2e-16 ***
+CueDirectionTR vs. BL:CueValidityValid vs. neutral      1.840      2.085    0.882 0.377678    
+CueDirectionTR vs. BL:CueValidityInvalid vs. neutral  -10.427      2.550   -4.090 4.36e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 148.5 on 9271 degrees of freedom
+  (534 observations deleted due to missingness)
+Multiple R-squared:  0.1151,	Adjusted R-squared:  0.1147 
+F-statistic: 241.3 on 5 and 9271 DF,  p-value: < 2.2e-16
+

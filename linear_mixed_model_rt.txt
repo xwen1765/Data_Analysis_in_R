@@ -1,0 +1,149 @@
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: ReactionTime ~ 1 + CueDirection + CueValidity + CueDirection:CueValidity +      (1 + CueDirection + CueValidity + CueDirection:CueValidity |  
+        subject)
+   Data: d
+
+REML criterion at convergence: 117990.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.0461 -0.6790 -0.1268  0.5151  5.3922 
+
+Random effects:
+ Groups   Name                                                 Variance Std.Dev. Corr                         
+ subject  (Intercept)                                           2973.99  54.534                               
+          CueDirectionTR vs. BL                                  129.15  11.365   0.34                        
+          CueValidityValid vs. neutral                           434.79  20.852  -0.78 -0.80                  
+          CueValidityInvalid vs. neutral                         211.73  14.551   0.51  0.97 -0.82            
+          CueDirectionTR vs. BL:CueValidityValid vs. neutral      22.81   4.776  -0.34  0.67 -0.09  0.61      
+          CueLinear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: ReactionTime ~ 1 + CueDirection * CueValidity + Correctness +      trials + (1 + CueDirection + CueValidity + CueDirection:CueValidity |  
+    subject)
+   Data: d
+
+REML criterion at convergence: 117867.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.1969 -0.6815 -0.1154  0.5282  5.3068 
+
+Random effects:
+ Groups   Name                                                 Variance Std.Dev. Corr                         
+ subject  (Intercept)                                           3101.2   55.689                               
+          CueDirectionTR vs. BL                                  118.7   10.894   0.27                        
+          CueValidityValid vs. neutral                           467.2   21.614  -0.77 -0.77                  
+          CueValidityInvalid vs. neutral                         219.4   14.812   0.48  0.97 -0.85            
+          CueDirectionTR vs. BL:CueValidityValid vs. neutral      18.4    4.289  -0.53  0.58  0.07  0.44      
+          CueDirectionTR vs. BL:CueValidityInvalid vs. neutral   510.3   22.590  -0.40 -0.98  0.88 -0.96 -0.41
+ Residual                                                      19264.4  138.796                               
+Number of obs: 9277, groups:  subject, 4
+
+Fixed effects:
+                                                       Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)                                           2.044e+03  2.799e+01  3.037e+00  73.033 4.99e-06 ***
+CueDirectionTR vs. BL                                 6.453e+00  5.666e+00  3.010e+00   1.139  0.33723    
+CueValidityValid vs. neutral                         -6.144e+01  1.099e+01  3.020e+00  -5.589  0.01112 *  
+CueValidityInvalid vs. neutral                        7.153e+01  7.796e+00  3.104e+00   9.174  0.00238 ** 
+Correctnessincorrect                                  2.881e+01  3.421e+00  9.193e+03   8.423  < 2e-16 ***
+trials                                               -1.701e-02  2.214e-03  9.001e+03  -7.683 1.72e-14 ***
+CueDirectionTR vs. BL:CueValidityValid vs. neutral    2.198e+00  2.910e+00  2.823e+00   0.755  0.50801    
+CueDirectionTR vs. BL:CueValidityInvalid vs. neutral -9.395e+00  1.156e+01  3.013e+00  -0.813  0.47554    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+               (Intr) CDTRvB CVVv.n CVIv.n Crrctn trials CDTRv.BL:CVVvn
+CDrctTRv.BL     0.255                                                  
+CVldtyVvs.n    -0.756 -0.730                                           
+CVldtyIvs.n     0.459  0.886 -0.826                                    
+Crrctnssncr    -0.030 -0.005  0.014 -0.026                             
+trials         -0.076  0.002 -0.002 -0.001  0.007                      
+CDTRv.BL:CVVvn -0.389  0.364  0.048  0.315 -0.014 -0.004               
+CDTRv.BL:CVIvn -0.385 -0.905  0.843 -0.893  0.007  0.000 -0.369        
+fit warnings:
+Some predictor variables are on very different scales: consider rescaling
+convergence code: 0
+boundary (singular) fit: see ?isSingular
+
+[1] 3.925
+[1] 3.925
+[1] 3.925
+[1] 3.945455
+[1] 3.956364
+[1] 3.963077
+[1] 3.968
+[1] 3.957895
+[1] FALSE
+[1] 3.955556
+[1] FALSE
+[1] 3.955556
+[1] 3.945455
+[1] 3.955556
+[1] 3.9625
+[1] 3.965714
+[1] 3.967123
+[1] 3.96
+[1] 3.945455
+[1] 3.955556
+  subject       session              trials       TimeCueOn       TimeCueOff          CueDirection   CueValidity    ReactionTime  Correctness       
+ Bryce:3785   Length:9811        Min.   :   1   Min.   :516.7   Min.   : 826.8   bottom left:4870   invalid:1965   Min.   :1729   Length:9811       
+ Wen  :1653   Class :character   1st Qu.: 482   1st Qu.:520.1   1st Qu.: 830.9   top right  :4941   neutral:3151   1st Qu.:1910   Class :character  
+ Z025 :2802   Mode  :character   Median : 964   Median :524.1   Median : 833.0                      valid  :4695   Median :2001   Mode  :character  
+ Z068 :1571                      Mean   :1079   Mean   :524.5   Mean   : 835.2                                     Mean   :2020                     
+                                 3rd Qu.:1529   3rd Qu.:528.6   3rd Qu.: 838.9                                     3rd Qu.:2103                     
+                                 Max.   :2988   Max.   :629.7   Max.   :1271.3                                     Max.   :2739                     
+                                                                                                                   NA's   :534                      
+    MS_Order        MS_Start       MS_Duration        MS_Angle         MS_Amp      
+ Min.   :1.000   Min.   :   1.0   Min.   : 14.00   Min.   :0.001   Min.   : 3.009  
+ 1st Qu.:1.000   1st Qu.: 232.0   1st Qu.: 45.00   1st Qu.:1.275   1st Qu.:12.905  
+ Median :1.000   Median : 467.0   Median : 62.00   Median :2.517   Median :18.145  
+ Mean   :1.517   Mean   : 743.5   Mean   : 60.64   Mean   :2.594   Mean   :17.863  
+ 3rd Qu.:2.000   3rd Qu.: 932.0   3rd Qu.: 72.00   3rd Qu.:3.369   3rd Qu.:23.270  
+ Max.   :9.000   Max.   :2704.0   Max.   :410.00   Max.   :6.283   Max.   :29.998  
+ NA's   :3531    NA's   :3531     NA's   :3531     NA's   :3531    NA's   :3531    
+  subject       session              trials       TimeCueOn       TimeCueOff          CueDirection   CueValidity    ReactionTime  Correctness       
+ Bryce:3785   Length:9811        Min.   :   1   Min.   :516.7   Min.   : 826.8   bottom left:4870   invalid:1965   Min.   :1729   Length:9811       
+ Wen  :1653   Class :character   1st Qu.: 482   1st Qu.:520.1   1st Qu.: 830.9   top right  :4941   neutral:3151   1st Qu.:1910   Class :character  
+ Z025 :2802   Mode  :character   Median : 964   Median :524.1   Median : 833.0                      valid  :4695   Median :2001   Mode  :character  
+ Z068 :1571                      Mean   :1079   Mean   :524.5   Mean   : 835.2                                     Mean   :2020                     
+                                 3rd Qu.:1529   3rd Qu.:528.6   3rd Qu.: 838.9                                     3rd Qu.:2103                     
+                                 Max.   :2988   Max.   :629.7   Max.   :1271.3                                     Max.   :2739                     
+                                                                                                                   NA's   :534                      
+    MS_Order        MS_Start       MS_Duration        MS_Angle         MS_Amp      
+ Min.   :1.000   Min.   :   1.0   Min.   : 14.00   Min.   :0.001   Min.   : 3.009  
+ 1st Qu.:1.000   1st Qu.: 232.0   1st Qu.: 45.00   1st Qu.:1.275   1st Qu.:12.905  
+ Median :1.000   Median : 467.0   Median : 62.00   Median :2.517   Median :18.145  
+ Mean   :1.517   Mean   : 743.5   Mean   : 60.64   Mean   :2.594   Mean   :17.863  
+ 3rd Qu.:2.000   3rd Qu.: 932.0   3rd Qu.: 72.00   3rd Qu.:3.369   3rd Qu.:23.270  
+ Max.   :9.000   Max.   :2704.0   Max.   :410.00   Max.   :6.283   Max.   :29.998  
+ NA's   :3531    NA's   :3531     NA's   :3531     NA's   :3531    NA's   :3531    
+# A tibble: 9,811 x 14
+   subject session trials TimeCueOn TimeCueOff CueDirection CueValidity ReactionTime Correctness MS_Order MS_Start MS_Duration MS_Angle MS_Amp
+   <fct>   <chr>    <dbl>     <dbl>      <dbl> <fct>        <fct>              <dbl> <chr>          <dbl>    <dbl>       <dbl>    <dbl>  <dbl>
+ 1 Bryce   session      1      524.       833. bottom left  invalid             NaN  <NA>             NaN      NaN         NaN   NaN     NaN  
+ 2 Bryce   session      2      523.       832. bottom left  valid               NaN  <NA>             NaN      NaN         NaN   NaN     NaN  
+ 3 Bryce   session      3      521.       831. bottom left  valid              1911. incorrect        NaN      NaN         NaN   NaN     NaN  
+ 4 Bryce   session      4      520.       830. top right    invalid            2168. incorrect        NaN      NaN         NaN   NaN     NaN  
+ 5 Bryce   session      5      521.       831. bottom left  invalid            1946. incorrect        NaN      NaN         NaN   NaN     NaN  
+ 6 Bryce   session      6      521.       831. top right    valid              1925. correct          NaN      NaN         NaN   NaN     NaN  
+ 7 Bryce   session      7      520.       831. bottom left  neutral            1980. correct            1        1          92     2.71   19.1
+ 8 Bryce   session      8      521.       831. top right    neutral            1974. correct          NaN      NaN         NaN   NaN     NaN  
+ 9 Bryce   session      9      521.       831. top right    valid              1981. correct          NaN      NaN         NaN   NaN     NaN  
+10 Bryce   session     10      521.       832. bottom left  valid              2315. incorrect        NaN      NaN         NaN   NaN     NaN  
+# … with 9,801 more rows
+  subject       session              trials       TimeCueOn       TimeCueOff          CueDirection   CueValidity    ReactionTime  Correctness       
+ Bryce:3785   Length:9811        Min.   :   1   Min.   :516.7   Min.   : 826.8   bottom left:4870   invalid:1965   Min.   :1729   Length:9811       
+ Wen  :1653   Class :character   1st Qu.: 482   1st Qu.:520.1   1st Qu.: 830.9   top right  :4941   neutral:3151   1st Qu.:1910   Class :character  
+ Z025 :2802   Mode  :character   Median : 964   Median :524.1   Median : 833.0                      valid  :4695   Median :2001   Mode  :character  
+ Z068 :1571                      Mean   :1079   Mean   :524.5   Mean   : 835.2                                     Mean   :2020                     
+                                 3rd Qu.:1529   3rd Qu.:528.6   3rd Qu.: 838.9                                     3rd Qu.:2103                     
+                                 Max.   :2988   Max.   :629.7   Max.   :1271.3                                     Max.   :2739                     
+                                                                                                                   NA's   :534                      
+    MS_Order        MS_Start       MS_Duration        MS_Angle         MS_Amp      
+ Min.   :1.000   Min.   :   1.0   Min.   : 14.00   Min.   :0.001   Min.   : 3.009  
+ 1st Qu.:1.000   1st Qu.: 232.0   1st Qu.: 45.00   1st Qu.:1.275   1st Qu.:12.905  
+ Median :1.000   Median : 467.0   Median : 62.00   Median :2.517   Median :18.145  
+ Mean   :1.517   Mean   : 743.5   Mean   : 60.64   Mean   :2.594   Mean   :17.863  
+ 3rd Qu.:2.000   3rd Qu.: 932.0   3rd Qu.: 72.00   3rd Qu.:3.369   3rd Qu.:23.270  
+ Max.   :9.000   Max.   :2704.0   Max.   :410.00   Max.   :6.283   Max.   :29.998  
+ NA's   :3531    NA's   :3531     NA's   :3531     NA's   :3531    NA's   :3531    
