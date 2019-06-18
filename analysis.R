@@ -181,7 +181,6 @@ d %>%
   scale_y_continuous("Accuracy")
 
 
-
 ml.acc.rt = glmer(Correctness ~ 1 + CueDirection + CueValidity + CueDirection:CueValidity + 
                     log(ReactionTime) +
                  (1 + CueDirection + CueValidity + CueDirection:CueValidity | subject) + trials,

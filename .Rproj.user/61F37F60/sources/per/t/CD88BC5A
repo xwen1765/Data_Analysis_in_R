@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1558732764659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1621578945",
+    "id" : "CD88BC5A",
+    "lastKnownWriteTime" : 1560817278,
+    "last_content_update" : 1560817278585,
+    "path" : "~/Desktop/Independent Research/Data_Analysis_in_R/analysis.R",
+    "project_path" : "analysis.R",
+    "properties" : {
+        "cursorPosition" : "8,14",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
